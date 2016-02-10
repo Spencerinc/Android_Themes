@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">#FFEDEBA6</item>
+
+        <item name="android:editTextColor">#ffb62a23</item>
+        <item name="android:textColorPrimary">#ffb62a23</item>
+        <item name="android:textColorSecondary">#ffb62a23</item>
+        <item name="android:textColorTertiary">#ffb62a23</item>
+        <item name="android:textColorPrimaryInverse">#ffb62a23</item>
+        <item name="android:textColorSecondaryInverse">#ffb62a23</item>
+        <item name="android:textColorTertiaryInverse">#ffb62a23</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextView1">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- This copies the style at TextView1 above, but then overrides the bold to normal -->
+    <style name="EditText" parent="TextView1">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- This inherits the style at TextView1 above, but then adds something additional -->
+    <style name="TextView1.TextView2">
+        <item name="android:padding">30dp</item>
+    </style>
+
+    <!-- This inherits the styles at TextView1 and TextView2, but then adds something additional -->
+    <style name="TextView1.TextView2.TextView3">
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <!-- A general style that is applied overall without needing to be explicitly called -->
+    <style name="TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">55sp</item>
+    </style>
+
+</resources>
